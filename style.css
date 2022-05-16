@@ -1,0 +1,126 @@
+*,*::before,*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+:root{
+    /* Colors */
+    --softBlue-clr:hsl(215,51%,70%);
+    --cyan-clr:hsl(178,100%,50%);
+    --mainBackground-clr:hsl(217, 54%, 11%);
+    --cardBackground-clr:hsl(216, 50%, 16%);
+    --line-clr:hsl(215, 32%, 27%);
+    --white-clr:hsl(0, 0%, 100%);
+    /* Fonts */
+    --size:18px;
+    --family:'Outfit', sans-serif;
+    --weights-300:300;
+    --weights-400:400;
+    --weights-600:600;
+}
+
+/* Desktop Version */
+/* Start Styling */
+
+
+
+body{
+    font-size: var(--size);
+    background-color: var(--mainBackground-clr);
+    color: var(--white-clr);
+    font-family: var(--family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.card{
+    border-radius: 20px;
+    max-width: 21rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 20px;
+    background-color:var(--cardBackground-clr) ;
+    box-shadow: 0 1px 5rem 1px #000;
+    position: relative;
+
+}
+.top span{
+    font-size: 15px;
+}
+.top span:nth-child(4){
+    margin-left: 33%;
+    color: var(--softBlue-clr);
+
+}
+.top span:nth-child(3){
+    color: var(--cyan-clr);
+
+}
+.card h4 , .card p {
+    padding: 10px 0;
+}
+.card p {
+    color: var(--softBlue-clr);
+}
+.info{
+    display: inline-flex;
+    margin: 10px auto 0 0;
+    
+    font-size: 15px;
+}
+.profile-pic{
+    margin: 0 10px;
+}
+.change{
+   color: var(--softBlue-clr);
+}
+.line{
+    color: var(--line-clr);
+}
+.img{
+    position: relative;
+}
+.view{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    opacity: 0;
+
+}
+
+.ETH{
+    width: 300px; 
+    border-radius: 10px;
+}
+.img:hover > .view {
+    cursor: pointer;
+    opacity: 1;
+    cursor: pointer;
+    z-index: 2;
+}
+.img:hover  {
+
+    background-color: var(--cyan-clr);
+    border-radius: 10px;
+  
+}
+.ETH:hover{
+    background-color: var(--cyan-clr);
+    cursor: pointer;
+    opacity: .5;
+}
+
+h4:hover{
+    cursor: pointer;
+    color: var(--cyan-clr);
+}
+
+.info div span:nth-child(2):hover{
+    cursor: pointer;
+    color: var(--cyan-clr);
+}
